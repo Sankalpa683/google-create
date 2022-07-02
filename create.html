@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SankizBase - Create your SankizBase Account For Free!</title>
+	<link rel="stylesheet" type="text/css" href="css/create.css">
+</head>
+<body>
+	<!-- container section starts -->
+	<div class="container">
+		<div class="container-column-left">
+			<div class="container-text">
+				<h2>Create your Account!</h2>
+			</div>
+			<!-- <form> -->
+				<div class="container-inputs">
+					<div class="input-first-name">
+						<input type="text" placeholder="Username" class="name">
+					</div>
+					<div class="input-last-name">
+						<input type="email" placeholder="Email Address" class="email">
+					</div>
+					<div class="input-password">
+						<input type="password" placeholder="Password" class="password">
+					</div>
+					<div class="input-confirm-password">
+						<input type="password" placeholder="Confirm password" class="confirm">
+					</div>
+				</div>
+				<div class="container-button">
+					<div class="button-left">
+						<a href="">Signin Instead</a>
+					</div>
+					<div class="button-right">
+						<button class="create">Create</button>
+					</div>
+				</div>
+			<!-- </form>	 -->
+		</div>
+		<div class="container-column-right">
+			<div class="right-logo">
+				<img src="https://ssl.gstatic.com/accounts/signup/glif/account.svg">
+			</div>
+			<div class="right-text">
+				<p>One account. All of SankizBase working for you.</p>
+			</div>
+		</div>
+	</div>
+	<!-- container section ends -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".create").click(function(){
+			var name = $(".name").val();
+			var email = $(".email").val();
+			var password = $(".password").val();
+			var confirm = $(".confirm").val();
+			if (name == "" || email == "" || password == "" || confirm == "") {
+				alert("Please Fill all the fields")
+			}
+			else{
+				if (confirm == password) {
+					alert("okay");
+					
+				}
+				else{
+					alert("Use the same goddamn password you bitch")
+				}
+			}
+		});
+	});
+</script>
+</html>
